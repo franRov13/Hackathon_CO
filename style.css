@@ -1,0 +1,200 @@
+html, body  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightseagreen;
+    color: white;
+    height: auto;
+    width: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+
+/* General style rule set for all items in ul */
+.navbar ul {
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+  float: left;
+  margin: 25px;
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  display: block;
+  font-family: Arial;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  font-weight: bold;
+  color: greenyellow;
+  transition: .3s;
+}
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  /*gap: 20px;*/
+  width: 100;
+  /*padding-bottom: 50px;*/
+}
+.petition-para {
+  text-align: center;
+  margin-left: 50px;
+
+}
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+  
+}
+
+h1, h2 {
+  color: whitesmoke;
+}
+h1{
+  font-size: 38px;
+}
+h2 {
+  font-size: 50px;
+}
+p {
+  font-size: 18px;
+  text-align: center;
+}
+span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.section {
+  background-color: #252121;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 60%;
+  margin: 10rem auto 0 auto;
+}
+.section img{
+  height: 250px
+  
+}
+
+.section h1{
+  margin: 0;
+  color: lightseagreen;
+}
+
+.section p{
+
+  color: white;
+  margin-right: 15px;
+
+}
+
+.btn1 {
+  border: none;
+  color: black;
+  background-color: chartreuse;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 #f9e506;
+  transition: ease-out 0.3s;
+  font-size: 2rem;
+  outline: none;
+}
+
+.btn1:hover {
+  box-shadow: inset 300px 0 0 0 #f9e506;
+  cursor: pointer;
+  color: black;
+
+}
+
+.btn2 {
+  border: none;
+  color: black;
+  background-color: aquamarine;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 #f9e506;
+  transition: ease-out 0.3s;
+  font-size: 2rem;
+  outline: none;
+}
+.btn2:hover {
+  box-shadow: inset 300px 0 0 0 purple;
+  cursor: pointer;
+  color: black;
+}
+
+.footer-container {
+  background-color: #252121;
+  padding-bottom: 4rem;
+}
+
+.footer {
+  text-align: center;
+  height: 30vh;
+  background-color: #252121;
+  color: white ;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.footer-heading h2 {
+  margin-bottom: 2rem;
+  color: lightseagreen;
+}
+
+.footer-heading a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 30px;
+}
+.footer-heading a:hover {
+  color: greenyellow;
+  transition: 0.3s ease-out;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
+
+
+#news {
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+  padding: 1 rem;
+  border-width:5px; 
+  border-style:solid; 
+  border-color: #252121;
+  background-color: #252121;
+}
