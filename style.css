@@ -115,21 +115,29 @@ span {
 }
 
 .section {
-  background-color: #004878;
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  width: 60%;
+  background-color: #e9e7db;
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
+  width: 80%;
   margin: 10rem auto 0 auto;
+  margin-bottom: 10%;
 }
 .section img{
-  height: 250px
+  display: block;
+  margin: auto;
+  width: 650px;
+  height: 280px
   
+}
+
+.section figure {
+  display: block;
+  margin-bottom: 30px;
 }
 
 .section h1{
   margin: 0;
-  color: white;
+  color: rgb(2, 14, 114);
 }
 
 .section p{
