@@ -83,8 +83,14 @@ h1, h2 {
   color: black;
 }
 
-h1{
+h1 {
   font-size: 38px;
+  color: black;
+}
+
+/* Dark mode toggling*/
+.dark-mode h1 {
+  color: white;
 }
 
 h2 {
@@ -152,12 +158,6 @@ span {
 }
 
 
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-
 #contactInfo {
   color: white;
   text-align: center;
@@ -174,8 +174,6 @@ span {
 .body-container {
     background-color: white;
     color: black; /* Set text color to contrast with the white background */
-    /* padding: 20px; Add padding to create space between text and container edges */
-    /* margin: 20px; Add margin to create space between the container and other elements */
     border-radius: 10px; /* Add rounded corners for a nicer appearance */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
     max-width: 800px; /* Adjust the value as needed */
@@ -184,6 +182,11 @@ span {
   
 }
   
+.dark-mode{
+  background-color: black;
+  color: white;
+}
+
 .navbar img {
     height: 30px; /* Adjust the height as needed */
     margin-right: 10px; /* Add margin between the logo and navbar items */
