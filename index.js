@@ -4,7 +4,6 @@ const toggleDarkMode = () => {
 }
 themeButton.addEventListener('click', toggleDarkMode);
 
-// Anotha one
 
 let signNowButton = document.getElementById("sign-now-button");
 const addSignature = () => {
@@ -19,7 +18,7 @@ const addSignature = () => {
   signPetition.append(paraG);
 
 }
-// Anotha one
+
 
 const validateForm = () => {
   let containsErrors = false;
@@ -43,7 +42,10 @@ const validateForm = () => {
     }
   }
 }
+
+
 signNowButton.addEventListener('click', validateForm)
+
 
 const getBooks = () => {
   const proxyURL = "https://cp-proxy1.herokuapp.com/";

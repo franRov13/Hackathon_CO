@@ -2,54 +2,71 @@ html, body  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: lightseagreen;
-    color: white;
+    background-color: lightgray;
+    color: black;
     height: auto;
     width: auto;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    
-  }
+}
+
+/* Style for the navbar */
+.navbar {
+    background-color: white;
+    color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Ensure the navbar is on top of other content */
+}
+
 
 /* General style rule set for all items in ul */
 .navbar ul {
-  list-style-type: none;
-  flex-direction: row;
-  justify-content: space-evenly;
-  overflow: hidden;
-  top: 0;
-  width: 100%;
-  margin-bottom: 1rem;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-left: 20rem;
+    color: white;
 }
 
 /* Style rule set for individual li */
 .navbar ul li {
-  float: left;
-  margin: 25px;
+    float: left;
+    margin: 25px;
+    color: white;
 }
-
 
 /* Style rule set for individual li link */
 .navbar ul li a {
-  display: block;
-  font-family: Arial;
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
+    display: block;
+    font-family: Arial;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 /* Style rule set for hovered link */
 .navbar ul li a:hover {
-  font-weight: bold;
-  color: greenyellow;
-  transition: .3s;
+    font-weight: bold;
+    color: red;
+    transition: .3s;
 }
+
+/* Other CSS styles remain unchanged */
+
 .petition-container {
   display: flex;
   flex-direction: row;
   /*gap: 20px;*/
   width: 100;
   /*padding-bottom: 50px;*/
+  margin-top: 50px;
 }
 .petition-para {
   text-align: center;
@@ -63,7 +80,7 @@ html, body  {
 }
 
 h1, h2 {
-  color: whitesmoke;
+  color: black;
 }
 h1{
   font-size: 38px;
@@ -71,6 +88,26 @@ h1{
 h2 {
   font-size: 50px;
 }
+
+/* Position the arrow under the "Apply Today" heading */
+h2::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Position the arrow below the heading */
+    left: 50%; /* Position the arrow horizontally centered */
+    transform: translateX(-50%); /* Center the arrow horizontally */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; /* Create the arrow pointing left */
+    border-right: 10px solid transparent; /* Create the arrow pointing right */
+    border-top: 10px solid black; /* Create the arrow pointing downwards */
+  }
+  
+/* Adjust the size and color of the arrow */
+h2::after {
+    border-top-color: lightseagreen; /* Match the arrow color with the "News" heading */
+}
+  
 p {
   font-size: 18px;
   text-align: center;
@@ -81,7 +118,7 @@ span {
 }
 
 .section {
-  background-color: #252121;
+  background-color: #004878;
   display: flex;
   justify-content: space-between;
   padding: 40px;
@@ -95,7 +132,7 @@ span {
 
 .section h1{
   margin: 0;
-  color: lightseagreen;
+  color: white;
 }
 
 .section p{
@@ -139,7 +176,7 @@ span {
   color: black;
 }
 
-.footer-container {
+/* .footer-container {
   background-color: #252121;
   padding-bottom: 4rem;
 }
@@ -147,15 +184,15 @@ span {
 .footer {
   text-align: center;
   height: 30vh;
-  background-color: #252121;
+  background-color: lightgray;
   color: white ;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-}
+} */
 
-.footer-heading {
+/* .footer-heading {
   display: flex;
   flex-direction: column;
   margin-right: 4rem;
@@ -174,18 +211,18 @@ span {
 .footer-heading a:hover {
   color: greenyellow;
   transition: 0.3s ease-out;
-}
+} */
 
 .dark-mode {
   background-color: black;
   color: white;
 }
-.error {
+/* .error {
   border-style: solid;
   border-width: 2px;
   border-color: red;
   background: pink;
-}
+} */
 
 
 #news {
@@ -198,3 +235,19 @@ span {
   border-color: #252121;
   background-color: #252121;
 }
+
+
+
+.body-container {
+    background-color: white;
+    color: black; /* Set text color to contrast with the white background */
+    /* padding: 20px; Add padding to create space between text and container edges */
+    /* margin: 20px; Add margin to create space between the container and other elements */
+    border-radius: 10px; /* Add rounded corners for a nicer appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    max-width: 800px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add padding to the left and right */
+  
+  }
+  
