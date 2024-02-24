@@ -91,20 +91,7 @@ h2 {
   font-size: 50px;
 }
 
-/* Position the arrow under the "Apply Today" heading */
-h2::after {
-    content: "";
-    position: absolute;
-    top: 55%; /* Position the arrow below the heading */
-    left: 50%; /* Position the arrow horizontally centered */
-    transform: translateX(-50%); /* Center the arrow horizontally */
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent; /* Create the arrow pointing left */
-    border-right: 10px solid transparent; /* Create the arrow pointing right */
-    border-top: 10px solid black; /* Create the arrow pointing downwards */
-  }
-  
+
 p {
   font-size: 18px;
   text-align: center;
@@ -115,7 +102,7 @@ span {
 }
 
 .section {
-  background-color: #e9e7db;
+  background-color: #393636;
   padding-top: 0.1%;
   padding-bottom: 0.1%;
   width: 80%;
@@ -137,7 +124,7 @@ span {
 
 .section h1{
   margin: 0;
-  color: rgb(2, 14, 114);
+  color: white;
 }
 
 .section p{
@@ -149,85 +136,26 @@ span {
 
 .btn1 {
   border: none;
-  color: black;
   background-color: lightgray;
   border-radius: 4px;
-  box-shadow: inset 0 0 0 0 red;
-  transition: ease-out 0.3s;
   font-size: 2rem;
   outline: none;
+  font-weight: bold;
+  color: black;
+  transition: .3s;
 }
 
 .btn1:hover {
-  box-shadow: inset 300px 0 0 0 red;
   cursor: pointer;
-  color: black;
+  color: red;
 
 }
 
-.btn2 {
-  border: none;
-  color: black;
-  background-color: aquamarine;
-  border-radius: 4px;
-  box-shadow: inset 0 0 0 0 #f9e506;
-  transition: ease-out 0.3s;
-  font-size: 2rem;
-  outline: none;
-}
-.btn2:hover {
-  box-shadow: inset 300px 0 0 0 purple;
-  cursor: pointer;
-  color: black;
-}
-
-/* .footer-container {
-  background-color: #252121;
-  padding-bottom: 4rem;
-}
-
-.footer {
-  text-align: center;
-  height: 30vh;
-  background-color: lightgray;
-  color: white ;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-} */
-
-/* .footer-heading {
-  display: flex;
-  flex-direction: column;
-  margin-right: 4rem;
-}
-.footer-heading h2 {
-  margin-bottom: 2rem;
-  color: lightseagreen;
-}
-
-.footer-heading a {
-  color: white;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-  font-size: 30px;
-}
-.footer-heading a:hover {
-  color: greenyellow;
-  transition: 0.3s ease-out;
-} */
 
 .dark-mode {
   background-color: black;
   color: white;
 }
-/* .error {
-  border-style: solid;
-  border-width: 2px;
-  border-color: red;
-  background: pink;
-} */
 
 
 #contactInfo {
@@ -238,7 +166,7 @@ span {
   border-width:5px; 
   border-style:solid; 
   border-color: #393636;
-  background-color: #494747;
+  background-color: #494747; 
 }
 
 
@@ -261,3 +189,16 @@ span {
     margin-right: 10px; /* Add margin between the logo and navbar items */
   }
   
+  .form-group {
+    margin-bottom: 15px; /* Adjust margin bottom as needed */
+}
+
+.form-group label {
+    display: block; /* Make labels appear on a new line */
+}
+
+.form-group input {
+    max-width: 500px; /* Make input fields stretch to full width */
+    padding: 10px; /* Add padding for better visual appearance */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
